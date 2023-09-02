@@ -5,7 +5,7 @@ using PatchManager.SassyPatching.Interfaces;
 using PatchManager.SassyPatching.NewAssets;
 using PatchManager.SassyPatching.Selectables;
 
-namespace CommunityResources;
+namespace CommunityResourceUnits;
 
 [PatcherRuleset("resource_units","resource_units")]
 public class ResourceUnitRuleset : IPatcherRuleSet
