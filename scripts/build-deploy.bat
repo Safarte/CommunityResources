@@ -1,2 +1,2 @@
 @echo off
-dotnet build "../CommunityResources.sln" -c Deploy
+dotnet build "../CommunityResourceUnits.sln" -c Deploy
