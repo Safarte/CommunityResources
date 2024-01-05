@@ -10,8 +10,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          lfs: true
 
       - name: Build the solution
         run: dotnet build "CommunityResources.sln" -c Release
@@ -27,4 +25,3 @@ jobs:
         with:
           name: ${{ env.artifact_name }}
           path: ${{ env.zip }}
-
