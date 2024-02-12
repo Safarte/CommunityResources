@@ -1,19 +1,16 @@
 ﻿using HarmonyLib;
 using KSP;
 using KSP.Game;
-using KSP.Iteration.UI.Binding;
 using KSP.Modules;
 using KSP.OAB;
 using KSP.Sim.Definitions;
-using KSP.Sim.ResourceSystem;
 using KSP.UI;
-// using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace CommunityResourceUnits;
+namespace CommunityResources;
 
 internal static class Patches
 {
-    internal static readonly Dictionary<string, string> ResourceUnits = new Dictionary<string, string>();
+    internal static readonly Dictionary<string, string> ResourceUnits = new();
 
     [HarmonyPatch(typeof(ResourceInfoDataContext), nameof(ResourceInfoDataContext.GetUnits))]
     [HarmonyPrefix]

@@ -4,7 +4,7 @@ using KSP.Sim.impl;
 using KSP.Sim.ResourceSystem;
 using UnityEngine;
 
-namespace CommunityResourceUnits;
+namespace CommunityResources;
 
 /// <summary>
 /// Handles dynamic resizing of non-stageable resources flight HUD window based on number of resources
@@ -46,7 +46,7 @@ internal class NonStageableResourcesUIController : KerbalMonoBehaviour
 
     private void OnVesselChanged(MessageCenterMessage msg)
     {
-        if (msg is not VesselChangedMessage vesselChangedMessage || vesselChangedMessage == null)
+        if (msg is not VesselChangedMessage)
             return;
 
         _needNsUiUpdate = true;
@@ -55,13 +55,12 @@ internal class NonStageableResourcesUIController : KerbalMonoBehaviour
     /// <summary>
     /// Updates the height & position of the non-stageable resources UI
     /// </summary>
-    /// <param name="nsResourcesCount"></param>
     private void UpdateNonStageableResourcesUI()
     {
         // Get number of non-stageable resources in the active vessel
         int nsResourcesCount = GetNonStageableResourcesCount(_activeVessel);
 
-        CommunityResourceUnitsPlugin.Logger.LogInfo($"Updating the Non-Stageable Resource UI. Found {nsResourcesCount} Resources to display.");
+        CommunityResourcesPlugin.Logger.LogInfo($"Updating the Non-Stageable Resource UI. Found {nsResourcesCount} Resources to display.");
 
         // Find the non-stageable resources window game object
         _nsResourcesUI = GameObject.Find("GameManager/Default Game Instance(Clone)/UI Manager(Clone)/Scaled Main Canvas/FlightHudRoot(Clone)/NonStageableResources(Clone)/KSP2UIWindow/Root/UIPanel");

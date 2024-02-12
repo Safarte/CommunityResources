@@ -5,14 +5,12 @@
 [Bb]in/
 [Oo]bj/
 _UpgradeReport_Files/
-[Pp]ackages/
+/[Pp]ackages/
 
 # Mod template folders
-[Bb]uild/
-[Dd]ist/
-[Nn]uget/
-[Ee]xternal_dlls/*
-![Ee]xternal_dlls/PUT_EXTERNAL_DLLS_HERE
+/[Bb]uild/
+/[Dd]ist/
+/[Nn]uget/
 
 # Rider
 
@@ -36,37 +34,7 @@ _UpgradeReport_Files/
 **/.idea/**/contentModel.xml
 **/.idea/**/modules.xml
 
-# Azure Stream Analytics local run output
-ASALocalRun/
-
-# MSBuild Binary and Structured Log
-*.binlog
-
-# NVidia Nsight GPU debugger configuration file
-*.nvuser
-
-# MFractors (Xamarin productivity tool) working folder
-.mfractor/
-
-# Local History for Visual Studio
-.localhistory/
-
-# Visual Studio History (VSHistory) files
-.vshistory/
-
-# BeatPulse healthcheck temp database
-healthchecksdb
-
-# Backup folder for Package Reference Convert tool in Visual Studio 2017
-MigrationBackup/
-
-# Ionide (cross platform F# VS Code tools) working folder
-.ionide/
-
-# Fody - auto-generated XML schema
-FodyWeavers.xsd
-
-# VS Code files for those working on multiple tools
+# VS Code files
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -81,5 +49,3 @@ FodyWeavers.xsd
 Thumbs.db
 Desktop.ini
 .DS_Store
-.idea/
-external_dlls/PUT_EXTERNAL_DLLS_HERE
