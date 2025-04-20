@@ -83,3 +83,10 @@ Desktop.ini
 .DS_Store
 .idea/
 external_dlls/PUT_EXTERNAL_DLLS_HERE
+
+# Unity
+Library/
+Logs/
+ProjectSettings/
+UserSettings/
+Temp/
